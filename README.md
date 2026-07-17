@@ -1,13 +1,5 @@
 # Agnes AI 多模态生成 Skill（文 / 图 / 视频）
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/cover.png" alt="Agnes AI 多模态生成 Skill — AURORA 极光品牌全案封面" width="100%">
-</p>
-
-<p align="center">
-  <em>👆 本封面由本 Skill 一条命令生成（文生图，<code>agnes-image-2.1-flash</code>）——作品即说明书</em>
-</p>
-
 > 一条命令，调用 Agnes AI 生成**文案、图片、视频**。OpenAI 兼容接口，零依赖 Python 客户端，开箱即用。
 > **完全免费**：自备 Agnes API Key 即可使用，无任何中间收费。
 >
@@ -88,7 +80,8 @@ agnes-ai-skill/
 │   └── demo.md              # 作品案例（AURORA 极光品牌全案）
 └── assets/
     ├── cover.png            # 展示封面（主视觉海报）
-    └── showcase-product.png # 产品概念图
+    ├── showcase-product.png # 产品概念图
+    └── showcase-video.mp4   # 电影感视频（8s）
 ```
 
 ---
@@ -100,13 +93,17 @@ agnes-ai-skill/
 
 <table>
   <tr>
-    <td width="50%" align="center">
+    <td width="33%" align="center">
       <img src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/cover.png" alt="主视觉海报" width="100%"><br>
       <sub><b>主视觉海报</b> · 文生图</sub>
     </td>
-    <td width="50%" align="center">
+    <td width="33%" align="center">
       <img src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/showcase-product.png" alt="产品概念图" width="100%"><br>
       <sub><b>产品概念图</b> · 文生图</sub>
+    </td>
+    <td width="33%" align="center">
+      <video width="100%" controls><source src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/showcase-video.mp4" type="video/mp4"></video><br>
+      <sub><b>电影感视频</b> · 文生视频（8s）</sub>
     </td>
   </tr>
 </table>
