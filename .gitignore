@@ -17,3 +17,7 @@ __pycache__/
 
 # 系统
 .DS_Store
+
+# 仓库需要的展示图（强制纳入版本控制，覆盖上面的 *.png 忽略规则）
+!assets/
+!assets/*.png
