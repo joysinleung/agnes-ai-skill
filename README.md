@@ -34,6 +34,20 @@
 
 ---
 
+## 获取 Agnes API Key
+
+本 Skill 完全免费，但需你自备自己的 Agnes API Key（Agnes 提供**免费**额度，注册即可使用，无需付费）。
+
+1. 打开 Agnes 平台 👉 [platform.agnes-ai.com](https://platform.agnes-ai.com)
+2. **注册 / 登录**账号（免费）
+3. 进入控制台，找到 **API Keys（API 密钥）** 菜单
+4. 点击 **Create Key / 创建密钥**，生成一条以 `sk-` 开头的密钥（形如 `sk-xxxx...`）
+5. 复制该密钥，按下方「快速开始」设置为环境变量 `AGNES_API_KEY`
+
+> ⚠️ **安全提示**：API Key 等同账号凭证，**不要**写进代码、提交到 Git 仓库或公开分享。仅通过环境变量注入（见下方第 1 步）。
+
+---
+
 ## 快速开始（免费版）
 
 ```bash

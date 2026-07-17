@@ -24,6 +24,7 @@ Agnes AI 提供 OpenAI 兼容的多模态 API（Base URL `https://apihub.agnes-a
 
 - Python 3（系统自带即可，无需虚拟环境）。
 - 需设置环境变量 `AGNES_API_KEY`（用户的 Agnes API Key）。**不要把 Key 写死进文件或提交到仓库。**
+- 尚无 Key 的用户：前往 [platform.agnes-ai.com](https://platform.agnes-ai.com) 免费注册，在控制台 **API Keys** 页面创建（形如 `sk-xxx`）。
 
 ## 快速开始
 
