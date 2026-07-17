@@ -1,0 +1,19 @@
+# 密钥与本地配置
+.env
+*.key
+*.pem
+agnes.key
+
+# 生成产物（不要进仓库）
+output/
+*.png
+*.mp4
+*.json.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 系统
+.DS_Store

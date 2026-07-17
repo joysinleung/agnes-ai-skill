@@ -1,0 +1,44 @@
+{
+  "name": "agnes-ai",
+  "displayName": "Agnes AI 多模态生成（文/图/视频）",
+  "category": "内容创作",
+  "subCategories": ["图文生成", "视频生成", "AI 写作", "品牌物料"],
+  "tags": ["Agnes", "文生图", "文生视频", "文生文", "多模态", "AI创作", "OpenAI兼容", "零依赖"],
+  "version": "1.0.0",
+  "author": "joysinleung",
+  "homepage": "https://github.com/joysinleung/agnes-ai-skill",
+  "description": "接入 Agnes AI，用一条命令生成文案、图片、视频。免费版需自备 API Key；付费版无需 Key、按次计费（转售型 Pay Skill，企业认证后启用）。",
+  "summary": "文生文 + 文生图 + 文生视频三合一，零依赖 Python 客户端，覆盖内容创作全链路。",
+  "requirements": "Python 3；免费版需环境变量 AGNES_API_KEY",
+  "triggerKeywords": ["Agnes", "agnes", "文生图", "文生视频", "文生文", "生成图片", "生成视频", "生成文案", "AI创作"],
+  "pricing": {
+    "mode": "dual_tier",
+    "freeTier": {
+      "requireApiKey": true,
+      "keyEnv": "AGNES_API_KEY",
+      "note": "用户自备 Agnes API Key，免费安装使用"
+    },
+    "paidTier": {
+      "requireApiKey": false,
+      "model": "per_call",
+      "suggestedPriceCNY": 0.5,
+      "priceRangeCNY": [0.1, 5.0],
+      "note": "转售型 Pay Skill：后端持有 Agnes Key，用户无需 Key、按次付费（微信支付 Agent Pay X402 协议）。需企业认证并绑定微信商户号后启用。",
+      "backendBlueprint": "payskill/server.py"
+    }
+  },
+  "endpoints": {
+    "chat": "POST /v1/chat/completions",
+    "image": "POST /v1/images/generations",
+    "video": "POST /v1/videos (async, poll GET /v1/videos/{id})"
+  },
+  "models": {
+    "text": ["agnes-2.0-flash", "agnes-1.5-flash"],
+    "image": ["agnes-image-2.1-flash", "agnes-image-2.0-flash"],
+    "video": ["agnes-video-v2.0"]
+  },
+  "limits": {
+    "video": "1 request / minute"
+  },
+  "enterpriseReady": true
+}
