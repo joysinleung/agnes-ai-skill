@@ -1,7 +1,7 @@
 # Agnes AI 多模态生成 Skill（文 / 图 / 视频）
 
 <p align="center">
-  <img src="./assets/cover.png" alt="Agnes AI 多模态生成 Skill — AURORA 极光品牌全案封面" width="100%">
+  <img src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/cover.png" alt="Agnes AI 多模态生成 Skill — AURORA 极光品牌全案封面" width="100%">
 </p>
 
 <p align="center">
@@ -101,11 +101,11 @@ agnes-ai-skill/
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="./assets/cover.png" alt="主视觉海报" width="100%"><br>
+      <img src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/cover.png" alt="主视觉海报" width="100%"><br>
       <sub><b>主视觉海报</b> · 文生图</sub>
     </td>
     <td width="50%" align="center">
-      <img src="./assets/showcase-product.png" alt="产品概念图" width="100%"><br>
+      <img src="https://raw.githubusercontent.com/joysinleung/agnes-ai-skill/main/assets/showcase-product.png" alt="产品概念图" width="100%"><br>
       <sub><b>产品概念图</b> · 文生图</sub>
     </td>
   </tr>
