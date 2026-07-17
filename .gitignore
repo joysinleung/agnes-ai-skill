@@ -22,3 +22,6 @@ __pycache__/
 !assets/
 !assets/*.png
 !assets/*.mp4
+!examples/
+!examples/*.png
+!examples/*.mp4

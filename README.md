@@ -123,7 +123,12 @@ agnes-ai-skill/
 ├── references/
 │   └── api_reference.md     # 完整 API 参考
 ├── examples/
-│   └── demo.md              # 作品案例（AURORA 极光品牌全案）
+│   ├── demo.md              # 作品案例文案（AURORA 极光品牌全案）
+│   ├── index.html           # AURORA 可交互作品集网页（浏览器打开）
+│   ├── brand_copy.md        # 品牌文案（Slogan / 品牌故事 / 小红书）
+│   ├── aurora_poster.png    # 主视觉海报
+│   ├── aurora_product.png   # 产品概念图
+│   └── aurora_film.mp4      # 电影感视频（8s）
 └── assets/
     ├── cover.png                 # 展示封面（主视觉海报）
     ├── showcase-product.png      # 产品概念图
@@ -158,6 +163,7 @@ agnes-ai-skill/
 </table>
 
 > 完整全案（含文案、分镜脚本、8 秒电影感视频）见 [`examples/demo.md`](./examples/demo.md)。
+> 可交互作品集网页：下载本仓库后浏览器打开 [`examples/index.html`](./examples/index.html)（含海报 / 产品图 / 视频联动展示）。
 
 ---
 

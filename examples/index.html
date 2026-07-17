@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AURORA 极光 · 概念发布作品集｜由 Agnes AI 全链路生成</title>
+<style>
+  :root{
+    --bg:#070b16; --bg2:#0d1426; --ink:#eef2ff; --muted:#9aa6c4;
+    --aurora1:#5eead4; --aurora2:#a78bfa; --aurora3:#38bdf8;
+    --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:radial-gradient(1200px 700px at 80% -10%, rgba(167,139,250,.18), transparent 60%),
+               radial-gradient(900px 600px at 10% 10%, rgba(94,234,212,.14), transparent 55%),
+               var(--bg);
+    color:var(--ink); font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .grad-text{background:linear-gradient(100deg,var(--aurora1),var(--aurora2) 55%,var(--aurora3));-webkit-background-clip:text;background-clip:text;color:transparent}
+  /* HERO */
+  header.hero{padding:84px 0 54px;text-align:center;position:relative}
+  .badge{display:inline-block;font-size:12px;letter-spacing:.28em;color:var(--muted);border:1px solid var(--line);padding:7px 16px;border-radius:999px;margin-bottom:26px}
+  h1{font-size:clamp(44px,8vw,92px);font-weight:800;letter-spacing:.04em;line-height:1.02}
+  .slogan{margin-top:18px;font-size:clamp(16px,2.4vw,22px);color:var(--muted)}
+  .slogan .en{display:block;margin-top:6px;font-size:13px;letter-spacing:.22em;opacity:.7}
+  /* VIDEO */
+  .reel{margin:46px 0 8px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(94,234,212,.10),0 10px 30px rgba(0,0,0,.5);position:relative;background:#000}
+  .reel video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+  .reel .tag{position:absolute;top:14px;left:14px;font-size:11px;letter-spacing:.2em;color:#cfe;background:rgba(7,11,22,.55);border:1px solid var(--line);padding:5px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+  /* SECTIONS */
+  section{padding:52px 0;border-top:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.26em;color:var(--aurora1);margin-bottom:12px}
+  h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin-bottom:18px}
+  p.lead{color:var(--muted);max-width:720px}
+  .story{font-size:19px;line-height:1.9;color:#dfe6ff;max-width:760px}
+  /* GALLERY */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+  .tile{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}
+  .tile img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
+  .tile .cap{padding:13px 15px;font-size:13px;color:var(--muted)}
+  .tile .cap b{color:var(--ink);font-weight:600}
+  /* SCRIPT TABLE */
+  table{width:100%;border-collapse:collapse;margin-top:22px;font-size:14px;overflow:hidden;border-radius:12px}
+  th,td{border:1px solid var(--line);padding:12px 14px;vertical-align:top;text-align:left}
+  th{background:rgba(167,139,250,.10);color:#dfe6ff;font-weight:600;width:70px}
+  td.t{color:var(--aurora1);font-weight:600;white-space:nowrap}
+  /* XHS */
+  .xhs{border:1px solid var(--line);border-radius:16px;padding:26px;background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);margin-top:22px}
+  .xhs h3{font-size:20px;margin-bottom:14px;color:#fff}
+  .xhs p{color:#d7deff;margin-bottom:10px}
+  .xhs .tags{margin-top:14px;color:var(--aurora2);font-size:14px;letter-spacing:.02em}
+  /* FOOTER */
+  footer{padding:60px 0 80px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  footer .k{color:var(--ink);font-weight:600}
+  .pill{display:inline-block;margin:4px;padding:6px 13px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:#cfd8f5}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="badge">AGNES AI · 文生文 / 文生图 / 文生视频 全链路演示</div>
+    <h1>AURORA <span class="grad-text">极光</span></h1>
+    <div class="slogan">
+      光之所向，境自开阔。
+      <span class="en">Where Light Leads, Boundaries Fade.</span>
+    </div>
+  </header>
+
+  <div class="reel">
+    <span class="tag">▶ 8-SECOND CINEMATIC REEL · AGNES VIDEO</span>
+    <video src="aurora_film.mp4" autoplay muted loop playsinline controls></video>
+  </div>
+
+  <section id="story">
+    <div class="eyebrow">BRAND STORY</div>
+    <h2>品牌故事</h2>
+    <p class="story">AURORA 极光汲取高纬度的纯净能量，将其凝练为指尖的微光。我们拒绝喧嚣，以极简线条重塑科技质感。在光影流转间，不仅点亮生活，更唤醒内心深处的宁静与辽阔。</p>
+  </section>
+
+  <section id="visual">
+    <div class="eyebrow">KEY VISUAL & PRODUCT</div>
+    <h2>视觉作品</h2>
+    <p class="lead">主视觉海报与产品概念图，均由 Agnes 图像模型一次性生成，无需任何后期修饰。</p>
+    <div class="grid2">
+      <div class="tile">
+        <img src="aurora_poster.png" alt="主视觉海报" />
+        <div class="cap"><b>主视觉海报</b> · 未来都市 × 极光，电影级色彩与留白构图</div>
+      </div>
+      <div class="tile">
+        <img src="aurora_product.png" alt="产品概念图" />
+        <div class="cap"><b>产品概念图</b> · 悬浮发光球体，产品级渲染与焦散质感</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="script">
+    <div class="eyebrow">15-SECOND REEL SCRIPT</div>
+    <h2>短视频分镜脚本</h2>
+    <table>
+      <tr><th>时间</th><th>画面</th><th>旁白</th></tr>
+      <tr><td class="t">0–5s</td><td>极夜中，一道幽蓝极光划破寂静，镜头极速推近至一枚散发微光的金属芯片。</td><td>当光芒穿透黑夜，科技便有了温度。</td></tr>
+      <tr><td class="t">6–10s</td><td>特写：手指轻触 AURORA 设备，柔和光晕如水波般扩散，周围杂乱瞬间虚化。</td><td>AURORA 极光。以纯净能量，定义轻奢未来。</td></tr>
+      <tr><td class="t">11–15s</td><td>全景：产品静置于简约空间，光影交错，Logo 缓缓浮现。</td><td>光之所向，境自开阔。</td></tr>
+    </table>
+  </section>
+
+  <section id="xhs">
+    <div class="eyebrow">XIAOHONGSHU COPY</div>
+    <h2>小红书种草文案</h2>
+    <div class="xhs">
+      <h3>把极光装进口袋，是种什么体验？✨</h3>
+      <p>深夜加班的疲惫，被这一抹幽蓝悄然治愈。</p>
+      <p>AURORA 极光新品上手，触感如丝绸般温润。</p>
+      <p>没有繁杂的功能堆砌，只有恰到好处的光影流转。</p>
+      <p>它不只是科技产品，更是桌面的一束诗。</p>
+      <p>在静谧中，感受能量流动的呼吸感。克制，却足够惊艳。🌌</p>
+      <div class="tags">#AURORA极光 #科技美学 #轻奢生活 #桌面好物 #极简主义</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>本作品集为 <span class="k">Agnes AI</span> 能力演示：文案（agnes-2.0-flash）、图像（agnes-image-2.1-flash）、视频（agnes-video-v2.0）均由本地客户端一键生成。</p>
+    <div style="margin-top:18px">
+      <span class="pill">文生文</span><span class="pill">文生图</span><span class="pill">文生视频</span><span class="pill">品牌全案</span><span class="pill">一键出片</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
