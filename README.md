@@ -1,5 +1,13 @@
 # Agnes AI 多模态生成 Skill（文 / 图 / 视频）
 
+<p align="center">
+  <img src="./assets/cover.png" alt="Agnes AI 多模态生成 Skill — AURORA 极光品牌全案封面" width="100%">
+</p>
+
+<p align="center">
+  <em>👆 本封面由本 Skill 一条命令生成（文生图，<code>agnes-image-2.1-flash</code>）——作品即说明书</em>
+</p>
+
 > 一条命令，调用 Agnes AI 生成**文案、图片、视频**。OpenAI 兼容接口，零依赖 Python 客户端，开箱即用。
 > **完全免费**：自备 Agnes API Key 即可使用，无任何中间收费。
 >
@@ -76,16 +84,34 @@ agnes-ai-skill/
 │   └── agnes_client.py      # 零依赖命令行客户端
 ├── references/
 │   └── api_reference.md     # 完整 API 参考
-└── examples/
-    └── demo.md              # 作品案例（AURORA 极光品牌全案）
+├── examples/
+│   └── demo.md              # 作品案例（AURORA 极光品牌全案）
+└── assets/
+    ├── cover.png            # 展示封面（主视觉海报）
+    └── showcase-product.png # 产品概念图
 ```
 
 ---
 
 ## 示例作品
 
-见 [`examples/demo.md`](./examples/demo.md)：用本 Skill 一套命令产出的「AURORA 极光」品牌发布全案
+用本 Skill 一套命令产出的「AURORA 极光」品牌发布全案
 （Slogan + 品牌故事 + 小红书文案 + 主视觉海报 + 产品概念图 + 8 秒电影感视频）。
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="./assets/cover.png" alt="主视觉海报" width="100%"><br>
+      <sub><b>主视觉海报</b> · 文生图</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="./assets/showcase-product.png" alt="产品概念图" width="100%"><br>
+      <sub><b>产品概念图</b> · 文生图</sub>
+    </td>
+  </tr>
+</table>
+
+> 完整全案（含文案、分镜脚本、8 秒电影感视频）见 [`examples/demo.md`](./examples/demo.md)。
 
 ---
 
