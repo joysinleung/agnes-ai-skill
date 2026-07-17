@@ -3,7 +3,7 @@ name: agnes-ai-free
 slug: agnes-ai-free
 displayName: "Agnes AI 多模态生成"
 description: "Use this skill when the user wants to call Agnes AI (agnes-ai.com, Sapiens AI) for multimodal generation via its OpenAI-compatible API: text generation (文生文), image generation (文生图), and video generation (文生视频). Trigger on requests like 用 Agnes 生成文案/图片/视频, 调用 agnes 文生图, generate text/image/video with Agnes, or any task needing Agnes AI models. Free to use: users provide their own AGNES_API_KEY. See skillhub.json for category and details."
-version: "1.1.1"
+version: "1.1.2"
 author: "joysinleung"
 homepage: "https://github.com/joysinleung/agnes-ai-skill"
 agent_created: true
