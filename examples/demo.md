@@ -1,7 +1,7 @@
 # 示例作品：AURORA 极光 — 品牌发布全案
 
 > 全部用 `agnes-ai` 本地客户端一键生成，证明「文案 + 配图 + 视频」一条工作流闭环。
-> 对应 SkillHub 最热品类「内容创作」，也是该 Skill 最好的销售素材。
+> 对应 SkillHub 最热品类「内容创作」，是该 Skill 能力的直观展示。
 
 ## 产出清单
 
@@ -12,7 +12,7 @@
 | 产品概念图 | agnes-image-2.1-flash | `image "悬浮发光球体..."` | `aurora_product.png` (1024×1024) |
 | 电影感视频 | agnes-video-v2.0 | `video "未来都市推进镜头..." -d 8` | `aurora_film.mp4` (8s) |
 
-完整作品集页面：`/Users/joysinleung/WorkBuddy/Claw/agnes-showcase/index.html`
+完整作品集页面：`agnes-showcase/index.html`（仓库同级的本地预览页，可用浏览器打开）
 
 ## 文案节选（agnes-2.0-flash 生成）
 

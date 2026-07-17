@@ -2,8 +2,8 @@
 name: agnes-ai
 slug: agnes-ai
 displayName: "Agnes AI 多模态生成"
-description: "Use this skill when the user wants to call Agnes AI (agnes-ai.com, Sapiens AI) for multimodal generation via its OpenAI-compatible API: text generation (文生文), image generation (文生图), and video generation (文生视频). Trigger on requests like 用 Agnes 生成文案/图片/视频, 调用 agnes 文生图, generate text/image/video with Agnes, or any task needing Agnes AI models. Free tier requires the user's AGNES_API_KEY; a paid no-key per-call tier is available after enterprise certification. See skillhub.json for pricing and category."
-version: "1.0.0"
+description: "Use this skill when the user wants to call Agnes AI (agnes-ai.com, Sapiens AI) for multimodal generation via its OpenAI-compatible API: text generation (文生文), image generation (文生图), and video generation (文生视频). Trigger on requests like 用 Agnes 生成文案/图片/视频, 调用 agnes 文生图, generate text/image/video with Agnes, or any task needing Agnes AI models. Free to use: users provide their own AGNES_API_KEY. See skillhub.json for category and details."
+version: "1.1.0"
 author: "joysinleung"
 homepage: "https://github.com/joysinleung/agnes-ai-skill"
 agent_created: true
@@ -18,14 +18,12 @@ Agnes AI 提供 OpenAI 兼容的多模态 API（Base URL `https://apihub.agnes-a
 客户端 `scripts/agnes_client.py`（仅用标准库 urllib，无需 pip 安装），把三种
 能力封装为统一命令行入口。
 
-**双档形态（详见 `skillhub.json`）：**
-- **免费版（当前上架）**：用户自备 `AGNES_API_KEY`，免费安装使用。
-- **付费版（转售型 Pay Skill，企业认证后启用）**：后端持有 Key，用户**无需 Key、按次付费**。
+**本版本为免费版**：用户自备 `AGNES_API_KEY`，免费安装、免费使用，不收取任何中间费用。
 
 ## 前置条件
 
 - Python 3（系统自带即可，无需虚拟环境）。
-- 免费版需设置环境变量 `AGNES_API_KEY`（用户的 Agnes API Key）。**不要把 Key 写死进文件或提交到仓库。**
+- 需设置环境变量 `AGNES_API_KEY`（用户的 Agnes API Key）。**不要把 Key 写死进文件或提交到仓库。**
 
 ## 快速开始
 
@@ -66,16 +64,9 @@ python3 scripts/agnes_client.py video "一只金毛幼犬在草地上奔跑" -o 
 
 详见 `references/api_reference.md`（模型列表、各接口请求/响应字段、错误码、分辨率自动映射规则）。
 
-## 付费转售版（Pay Skill 蓝图）
-
-`payskill/` 目录提供**转售型 Pay Skill 后端原型**：后端持有 Agnes Key，
-用户无需 Key、按次付费（微信支付 Agent Pay X402 协议）。包含开发者签名 +
-X402 预下单 + 支付触发返回的改造示例，企业认证并绑定微信商户号后即可启用。
-详见 `payskill/README.md`。
-
 ## 资源
 
 - `scripts/agnes_client.py` — 零依赖命令行客户端，支持 `text`/`image`/`video` 三个子命令
 - `references/api_reference.md` — 完整 API 参考（端点、模型、参数、限频、错误码）
-- `skillhub.json` — SkillHub 上架元信息（分类、标签、双档定价）
-- `payskill/` — 付费转售版 Pay Skill 后端原型与改造说明
+- `skillhub.json` — SkillHub 上架元信息（分类、标签）
+- `examples/demo.md` — 作品案例（AURORA 极光品牌全案）
