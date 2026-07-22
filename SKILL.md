@@ -2,8 +2,8 @@
 name: agnes-ai-free
 slug: agnes-ai-free
 displayName: "Agnes AI 多模态生成"
-description: "Use this skill when the user wants to call Agnes AI (agnes-ai.com, Sapiens AI) for multimodal generation via its OpenAI-compatible API: text generation (文生文), image generation (文生图), and video generation (文生视频). Trigger on requests like 用 Agnes 生成文案/图片/视频, 调用 agnes 文生图, generate text/image/video with Agnes, or any task needing Agnes AI models. Free to use: users provide their own AGNES_API_KEY. See skillhub.json for category and details."
-version: "1.1.2"
+description: "Use this skill when the user wants to call Agnes AI (agnes-ai.com, Sapiens AI) for multimodal generation via its OpenAI-compatible API: text generation (文生文), image generation (文生图), and video generation (文生视频). Trigger on requests like 用 Agnes 生成文案/图片/视频、调用 Agnes 文生图/文生视频，或任何需要 Agnes AI 多模态生成（text/image/video）的任务。 Free to use: users provide their own AGNES_API_KEY. See skillhub.json for category and details."
+version: "1.1.3"
 author: "joysinleung"
 homepage: "https://github.com/joysinleung/agnes-ai-skill"
 agent_created: true
@@ -40,6 +40,8 @@ python3 scripts/agnes_client.py image "一只金毛幼犬在阳光草地上玩�
 # 文生视频（异步任务，自动轮询并下载 mp4）
 python3 scripts/agnes_client.py video "一只金毛幼犬在草地上奔跑" -o out.mp4 --duration 5
 ```
+
+**✅ 完成判据**：脚本打印资源直链或下载到 `-o` 路径的目标文件且文件**存在** = 生成成功；无输出路径或 stderr 报错 = 失败，需看报错信息（常见：AGNES_API_KEY 缺失、429 限频）。
 
 ## 三种能力说明
 
