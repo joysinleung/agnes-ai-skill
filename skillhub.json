@@ -1,10 +1,10 @@
 {
-  "name": "agnes-ai-free",
+  "name": "agnes-ai-skill",
   "displayName": "Agnes AI 多模态生成（文/图/视频）",
   "category": "内容创作",
   "subCategories": ["图文生成", "视频生成", "AI 写作", "品牌物料"],
   "tags": ["Agnes", "文生图", "文生视频", "文生文", "多模态", "AI创作", "OpenAI兼容", "零依赖"],
-  "version": "1.1.2",
+  "version": "1.1.3",
   "author": "joysinleung",
   "homepage": "https://github.com/joysinleung/agnes-ai-skill",
   "description": "接入 Agnes AI，用一条命令生成文案、图片、视频。完全免费：用户自备 Agnes API Key 即可使用，无任何中间收费。",
